@@ -1,0 +1,43 @@
+.container {
+  background-color: #fcfbfb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.greeting {
+  padding-top: 35px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+  font-weight: 600;
+  margin-left: 0.1rem;
+}
+
+.subtext {
+  padding-top: 0.05rem;
+  font-size: 40px;
+  color: #555;
+}
+.runner {
+  display: inline-block;
+  transform: scaleX(-1); /* Flip to face right */
+  animation: run 1.4s infinite ease-in-out;
+}
+
+@keyframes run {
+  0% {
+    transform: scaleX(-1) translateX(0);
+  }
+  50% {
+    transform: scaleX(-1) translateX(5px);
+  }
+  100% {
+    transform: scaleX(-1) translateX(0);
+  }
+}

@@ -1,0 +1,95 @@
+.background {
+  min-height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 1rem 0.11rem 1.2rem 1rem;
+  font-size: 1rem;
+  border: 0.6px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.input::placeholder,
+.select::placeholder {
+  color: #999;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #2193b0;
+  background-color: #fff;
+  outline: none;
+}
+
+.button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #2193b0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #176f8e;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row > .input {
+  flex: 1;
+}
+
+.countryRow {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  max-width: 400px; /* 👈 restrict total width */
+}
+
+.countryCode {
+  width: 120px; /* 👈 fixed width */
+}
